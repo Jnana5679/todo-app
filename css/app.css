@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#alertPopUp {
+    background-color: #34ad4e;
+    height: 30px;
+    width: 100px;
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%);
+    transition-duration: 0.5s;
+    font-family: 'Poppins', Sans-Serif;
+    border-bottom: 5px solid #036919;
+    border-radius: 5px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: -1;
+}
+
+
+.bg-container {
+    background-color: #99e0a8;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.todo-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.application-text {
+    color: #92b395;
+}
+
+.input-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.input-container input[type="text"] {
+    width: 80%;
+    height: 35px;
+    border: 0;
+    border-radius: 10px;
+    padding: 10px 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.input-container input[type="text"]:focus {
+    outline: none;
+}
+
+#addButton {
+    width: 15%;
+    background-color: #4f7cc9;
+    border: 0;
+    color: #fff;
+    font-family: 'Poppins', Sans-Serif;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#todoListContainer {
+    overflow-y: scroll;
+    max-height: 200px;
+}
+
+#todoListContainer::-webkit-scrollbar {
+    width: 4px;
+}
+
+#todoListContainer::-webkit-scrollbar-thumb {
+    background: #4f7cc9;
+    border-radius: 5px;
+}
+
+.todo-items {
+    font-family: 'Poppins', Sans-Serif;
+    margin: 20px 0;
+}
+
+.each-list {
+    background-color: rgba(245, 247, 250, 0.8);
+    margin: 0;
+    list-style-type: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Poppins', Sans-Serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    user-select: none;
+    margin-bottom: 10px;
+}
+
+.label-text {
+    margin-left: 5px;
+}
+
+.checked {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.edit-icon {
+    margin-right: 10px;
+}
+
+.icon-position {
+    margin-right: 10px;
+}
+
+#saveButton {
+    position: relative;
+    left: 85%;
+    top: 10%;
+    width: 15%;
+    height: 30px;
+    background-color: #4f7cc9;
+    border: 0;
+    color: #fff;
+    font-family: 'Poppins', Sans-Serif;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+#editAddedTodoContainer {
+    width: 90%;
+    position: fixed;
+    height: 200px;
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    transition-duration: 0.3s;
+}
+
+#editAddedTodo {
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    font-family: 'Poppins', Sans-Serif;
+    margin-bottom: 20px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+#deleteConfirmation {
+    background-color: #fff;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    min-width: 290px;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+    margin: 20px 20px 0 0;
+    height: 150px;
+}
+
+#deleteConfirmation p {
+    color: red;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+.delete-alert-buttons-container {
+    align-self: flex-end;
+    margin-top: 10px;
+}
+
+#deleteNoButton {
+    width: 50px;
+    border: none;
+    background-color: #27c234;
+    color: #fff;
+    font-family: 'Poppins', Sans-Serif;
+    font-weight: 600;
+    padding: 6px;
+    border-radius: 2px;
+}
+
+#deleteYesButton {
+    width: 50px;
+    border: none;
+    background-color: #c22727;
+    color: #fff;
+    font-family: 'Poppins', Sans-Serif;
+    font-weight: 600;
+    padding: 6px;
+    border-radius: 2px;
+}
