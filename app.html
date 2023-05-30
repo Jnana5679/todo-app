@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+
+<head> </head>
+
+<body>
+    <div id="alertPopUp">
+        <p id="action"></p>
+    </div>
+    <div class="bg-container">
+        <div class="content-container">
+            <h1 class="todo-text">Todo <span class="application-text">Application</span></h1>
+            <div class="input-container">
+                <input type="text" placeholder="What's need to be done?" id="userInput" />
+                <button id="addButton">Add</button>
+            </div>
+            <h1 class="todo-items">Todo Items</h1>
+            <ul id="todoListContainer">
+
+            </ul>
+        </div>
+        <p style="font-family: 'Poppins', Sans-Serif; margin-top: 200px;">Changes which were made saved automatically</p>
+    </div>
+    <div id="editAddedTodoContainer">
+        <p style="color: red;">After <span style="font-size: 30px;">Done</span>,,,press <span style="font-size: 30px;">Save</span> to save your progress</p>
+        <textarea rows="6" cols="50" id="editAddedTodo"></textarea>
+        <div class="buttons-container">
+            <button id="closeButton">Close</button>
+            <button id="DoneButton">Done</button>
+        </div>
+    </div>
+    <div id="deleteConfirmation">
+        <p>Are you sure you want to delete the task!!</p>
+        <div class="delete-alert-buttons-container">
+            <button id="deleteNoButton">No</button>
+            <button id="deleteYesButton">Yes</button>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ae066f4557.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
