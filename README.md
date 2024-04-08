@@ -40,9 +40,9 @@ You can find a live demo of the website [here](https://jnana5679.github.io/todo-
 
 ## Screenshots
 
-![No tasks added](Screenshot from 2024-04-08 06-56-13.png)
+![No tasks added](/one-task-added.png)
 
-![One tasks added](Screenshot from 2024-04-08 06-56-29.png)
+![One tasks added](/one-task-added.png)
 
 
 
